@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    trigger {
-        cron('H 4/* 0 0 1-5')
-    }
     stage('Clone Git repo') {
         checkout scm
     }
