@@ -1,6 +1,9 @@
 pipeline {
     agent any
-    stage('Clone Git repo') {
-        checkout scm
+    stage('Checkout code') {
+        steps {
+            checkout scm
+        }
     }
 }
+
